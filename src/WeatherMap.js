@@ -67,7 +67,7 @@ const WeatherMap = () => {
 
   useEffect(() => {
     fetchWeatherData();
-    const interval = setInterval(fetchWeatherData, 300000); // 300000 ms = 5 minutes
+    const interval = setInterval(fetchWeatherData, 3000); // 300000 ms = 5 minutes
 
     return () => clearInterval(interval); // Clear the interval when the component unmounts
   }, []);
